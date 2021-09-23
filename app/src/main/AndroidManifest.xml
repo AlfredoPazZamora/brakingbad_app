@@ -10,10 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.BreakingBadApp">
         <activity
+            android:name=".activities.detailscreen.DetailActivity"
+            android:exported="true" />
+        <activity
             android:name=".activities.loginscreen.LoginScreenActivity"
             android:exported="true"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            />
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activities.mainscreen.MainActivity"
             android:exported="true" />
