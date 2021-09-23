@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import com.itiudc.breakingbadapp.R
+import com.itiudc.breakingbadapp.activities.loginscreen.LoginScreenActivity
 import com.itiudc.breakingbadapp.activities.mainscreen.MainActivity
 
 class SplashScreenActivity : AppCompatActivity() {
@@ -16,7 +17,7 @@ class SplashScreenActivity : AppCompatActivity() {
 
         handler = Handler()
         handler.postDelayed({
-            val intent = Intent(this, MainActivity::class.java)
+            val intent = Intent(this, LoginScreenActivity::class.java)
             startActivity(intent)
             finish()
         }, 3000) //Delay 3 seconds top open MainActivity
