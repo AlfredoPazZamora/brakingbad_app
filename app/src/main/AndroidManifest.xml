@@ -18,7 +18,9 @@
             android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity
             android:name=".activities.mainscreen.MainActivity"
-            android:exported="true" />
+            android:exported="true"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            />
         <activity
             android:name=".activities.splashscreen.SplashScreenActivity"
             android:exported="true"
