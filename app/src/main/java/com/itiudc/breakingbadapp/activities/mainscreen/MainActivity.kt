@@ -36,7 +36,9 @@ class MainActivity : AppCompatActivity(), CharactersListFragment.CharacterSelect
     override fun onCharacterSelected(character: Character) {
         Log.i("Edg", "Character loaded on MainActivity: ${character.name}")
 
-        val intent = Intent(this, DetailActivity::class.java)
+        val intent = Intent(this, DetailActivity::class.java).apply {
+            putExtra(DetailActivity.CHARACTER_KEY, character)
+        }
         startActivity(intent)
     }
 }

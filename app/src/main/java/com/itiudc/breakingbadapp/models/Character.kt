@@ -1,5 +1,9 @@
 package com.itiudc.breakingbadapp.models
 
+import android.os.Parcelable
+import kotlinx.parcelize.Parcelize
+
+@Parcelize
 class Character(
     val id: Int,
     val name: String,
@@ -11,5 +15,5 @@ class Character(
     val appearance: Array<Int>,
     val portrayed: String,
     val category: String
-) {
+) : Parcelable {
 }

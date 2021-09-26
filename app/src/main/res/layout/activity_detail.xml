@@ -13,9 +13,12 @@
         tools:context=".activities.detailscreen.DetailActivity">
 
         <TextView
+            android:id="@+id/title"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:text="@string/app_name"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            android:text="App"
             />
 
     </RelativeLayout>
