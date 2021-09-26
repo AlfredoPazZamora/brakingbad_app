@@ -1,5 +1,6 @@
 package com.itiudc.breakingbadapp.fragments
 
+import android.content.Context
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -18,13 +19,23 @@ import com.itiudc.breakingbadapp.databinding.ActivityMainBinding
 import com.itiudc.breakingbadapp.databinding.FragmentCharactersListBinding
 import com.itiudc.breakingbadapp.models.Character
 import com.itiudc.breakingbadapp.viewModels.CharacterViewModel
+import java.lang.ClassCastException
 
 class CharactersListFragment : Fragment() {
 
+    public interface CharacterSelectListener{
+        fun onCharacterSelected(character: Character)
+    }
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
+    private lateinit var characterSelectListener: CharacterSelectListener
 
+    override fun onAttach(context: Context) {
+        super.onAttach(context)
+        characterSelectListener = try {
+            context as CharacterSelectListener
+        }catch (error: ClassCastException){
+            throw ClassCastException("$context must implement CharacterSelectListener")
+        }
     }
 
     override fun onCreateView(
@@ -41,6 +52,7 @@ class CharactersListFragment : Fragment() {
 
             adapter.onClickItem = {
                 Log.i("edg", "Character ${it.name}")
+                characterSelectListener.onCharacterSelected(it)
             }
 
             binding.recyclerCharacterList.layoutManager = LinearLayoutManager(requireActivity())
