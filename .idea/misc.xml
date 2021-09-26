@@ -3,6 +3,9 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Luis/ProyectoKotlin/brakingbad_app/app/src/main/res/layout/activity_main.xml" value="0.36666666666666664" />
+        <entry key="..\:/Luis/ProyectoKotlin/brakingbad_app/app/src/main/res/layout/fragment_phrase.xml" value="0.36666666666666664" />
+        <entry key="..\:/Luis/ProyectoKotlin/brakingbad_app/app/src/main/res/layout/phrases_item.xml" value="0.36666666666666664" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/BreakingBadApp/app/src/main/res/drawable-v24/ic_bg.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/BreakingBadApp/app/src/main/res/drawable-v24/ic_mars.xml" value="0.22037037037037038" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/BreakingBadApp/app/src/main/res/drawable-v24/ic_neptune.xml" value="0.22037037037037038" />
