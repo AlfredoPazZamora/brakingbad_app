@@ -36,16 +36,100 @@
                 android:gravity="center">
 
 
+                <de.hdodenhof.circleimageview.CircleImageView
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:id="@+id/profile_image"
+                    android:layout_width="96dp"
+                    android:layout_height="96dp"
+                    android:src="@drawable/incognito_settings"
+                    app:civ_border_width="2dp"
+                    app:civ_border_color="#FF000000"/>
+
+
 
                 <TextView
                     android:id="@+id/subtitleTextView"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="32dp"
-                    android:layout_marginBottom="20dp"
-                    android:text="Planeta"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center"
+                    android:drawableLeft="@drawable/ic_settings_downphoto"
+                    android:drawablePadding="5dp"
+                    android:singleLine="true"
+                    android:text="Username"
                     android:textColor="#262626"
-                    android:textSize="32sp" />
+                    android:textSize="26sp"/>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="left"
+                    android:drawableLeft="@drawable/ic_baseline_notifications_active_24"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:text="  Notifications"
+                    android:textColor="#262626"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="left"
+                    android:drawableLeft="@drawable/ic_baseline_message_24"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:text="  Messages"
+                    android:textColor="#262626"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="left"
+                    android:drawableLeft="@drawable/ic_baseline_help_center_24"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:text="  Help "
+                    android:textColor="#262626"
+                    android:layout_marginLeft="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="left"
+                    android:drawableLeft="@drawable/ic_baseline_highlight_24"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:text="  Light Mode "
+                    android:textColor="#262626"
+                    android:layout_marginLeft="10dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="left"
+                    android:drawableLeft="@drawable/ic_baseline_language_24"
+                    android:textSize="18sp"
+                    android:singleLine="true"
+                    android:text="  Language "
+                    android:textColor="#262626"
+                    android:layout_marginLeft="10dp"
+                    />
+
 
 
             </LinearLayout>
