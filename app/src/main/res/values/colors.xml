@@ -7,4 +7,13 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+    <!--  BREAKING BAD COLORS  -->
+    <color name="blueMing_006">#006D77</color>
+    <color name="yellowMaize_E8C">#E8C547</color>
+    <color name="blackRich_011">#011627</color>
+    <color name="electricBlue_90F">#90FCF9</color>
+    <color name="black_171">#171123</color>
+    <color name="gray_495">#495057</color>
+    <color name="black_212">#212529</color>
 </resources>
