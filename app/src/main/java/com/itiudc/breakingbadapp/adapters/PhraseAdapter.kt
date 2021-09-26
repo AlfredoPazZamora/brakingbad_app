@@ -1,16 +1,12 @@
 package com.itiudc.breakingbadapp.adapters
 
-import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.itiudc.breakingbadapp.databinding.PhrasesItemBinding
 import com.itiudc.breakingbadapp.models.Phrases
 
-class PhraseAdapter(private val Phrase: List<Phrases>) : RecyclerView.Adapter<PhraseAdapter.ViewHolder>() {
-
-
-
+class PhraseAdapter(private val Phrase: MutableList<Phrases>) : RecyclerView.Adapter<PhraseAdapter.ViewHolder>() {
     inner class ViewHolder(private val binding: PhrasesItemBinding) : RecyclerView.ViewHolder(binding.root){
         fun bind(phrases: Phrases){
 

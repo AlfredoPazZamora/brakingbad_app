@@ -24,9 +24,7 @@ class PhrasesViewModel : ViewModel() {
     private suspend fun fetch(): MutableList<Phrases>{
         return withContext(Dispatchers.IO){
             val phrases: MutableList<Phrases> = phrasesService.getPhrases()
-
             phrases
-
         }
     }
 }
