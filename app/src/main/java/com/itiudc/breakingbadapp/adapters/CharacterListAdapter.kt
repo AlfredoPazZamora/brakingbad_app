@@ -1,5 +1,6 @@
 package com.itiudc.breakingbadapp.adapters
 
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
@@ -9,6 +10,9 @@ import com.itiudc.breakingbadapp.databinding.CharacterListItemBinding
 import com.itiudc.breakingbadapp.models.Character
 
 class CharacterListAdapter(private val characterList: List<Character>) : RecyclerView.Adapter<CharacterListAdapter.ViewHolder>() {
+
+    lateinit var onClickItem: (Character) -> Unit
+
     inner class ViewHolder(private val binding: CharacterListItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(character: Character){
             binding.nameCharacter.text = character.name.toString()
@@ -40,6 +44,13 @@ class CharacterListAdapter(private val characterList: List<Character>) : Recycle
                                     .placeholder(R.drawable.ic_launcher_foreground)
                                     .into(binding.iconStatusCharacter)
 
+            }
+
+            binding.root.setOnClickListener(){
+                if(::onClickItem.isInitialized)
+                    onClickItem(character)
+                else
+                    Log.i("edg", "onMovieClick is not initialized")
             }
 
 
