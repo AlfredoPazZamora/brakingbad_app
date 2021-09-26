@@ -3,6 +3,8 @@ package com.itiudc.breakingbadapp.activities.mainscreen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.ImageView
+import com.bumptech.glide.request.RequestOptions
 import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
@@ -20,6 +22,8 @@ class MainActivity : AppCompatActivity(), CharactersListFragment.CharacterSelect
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         val tabLayoutAdapter = TabLayoutAdapter(this)
@@ -33,6 +37,7 @@ class MainActivity : AppCompatActivity(), CharactersListFragment.CharacterSelect
         }.attach()
 
     }
+
 
     override fun onCharacterSelected(character: Character) {
         Log.i("Edg", "Character loaded on MainActivity: ${character.name}")
