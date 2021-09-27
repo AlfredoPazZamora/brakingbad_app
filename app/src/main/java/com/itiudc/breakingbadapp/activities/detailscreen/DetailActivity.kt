@@ -1,8 +1,8 @@
 package com.itiudc.breakingbadapp.activities.detailscreen
 
+import android.content.res.Resources
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
 import androidx.databinding.DataBindingUtil
 import com.bumptech.glide.Glide
 import com.itiudc.breakingbadapp.R
@@ -13,15 +13,15 @@ class DetailActivity : AppCompatActivity() {
 
     companion object {
         const val CHARACTER_KEY = "character_item"
-        const val CHARACTER_IMAGE = "character_image"
     }
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_detail)
         val binding = DataBindingUtil.setContentView<ActivityDetailBinding>(this, R.layout.activity_detail)
         val bundle: Bundle? = intent.extras
+
+        val stringResource: Resources = resources
 
         if(bundle != null) {
             val character = bundle.getParcelable<Character>(CHARACTER_KEY)
@@ -36,8 +36,8 @@ class DetailActivity : AppCompatActivity() {
                 .placeholder(R.drawable.ic_launcher_foreground)
                 .into(binding.imgProfile)
 
-            binding.textStatusDetail.text = "Is ${character?.status.toString()}"
-            binding.textDateDetail.text = "Born in ${character?.birthday.toString()}"
+            binding.textStatusDetail.text = stringResource.getString(R.string.detail_text_status, character?.status.toString())
+            binding.textDateDetail.text = stringResource.getString(R.string.detail_text_date, character?.birthday.toString())
 
             when(character?.status){
                 "Deceased" -> Glide
@@ -60,14 +60,9 @@ class DetailActivity : AppCompatActivity() {
                     .into(binding.iconStatusDetail)
             }
 
-
             val occupationText = character?.occupation?.joinToString(", ").toString()
-
-            binding.textOccupationDetail.text = "Occupation: $occupationText"
-
-            binding.textActorDetail.text = "Performed by: ${character?.portrayed.toString()}"
-
-
+            binding.textOccupationDetail.text = stringResource.getString(R.string.detail_text_occupation, occupationText)
+            binding.textActorDetail.text = stringResource.getString(R.string.detail_text_portrayed, character?.portrayed.toString())
         }
     }
 }

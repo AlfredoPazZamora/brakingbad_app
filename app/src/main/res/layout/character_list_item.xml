@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -18,6 +19,7 @@
             android:padding="5dp"
             android:src="@drawable/img_example"
             android:layout_centerVertical="true"
+            tools:src="@drawable/ic_launcher_foreground"
             />
 
         <LinearLayout
@@ -33,7 +35,8 @@
                 android:id="@+id/name_character"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Name character"
+                android:text="@string/text_name"
+                tools:text="@string/text_name"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 android:paddingHorizontal="10dp"
@@ -44,7 +47,8 @@
                 android:id="@+id/nickname_character"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Nickname"
+                android:text="@string/text_nickname"
+                tools:text="@string/text_nickname"
                 android:textStyle="italic"
                 android:textSize="15sp"
                 android:paddingHorizontal="10dp"
@@ -60,6 +64,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:src="@drawable/icon_unknow"
+            tools:src="@drawable/ic_launcher_foreground"
             android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="5dp"

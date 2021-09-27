@@ -3,12 +3,9 @@ package com.itiudc.breakingbadapp.activities.mainscreen
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ImageView
-import com.bumptech.glide.request.RequestOptions
 import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
-import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.itiudc.breakingbadapp.R
@@ -33,11 +30,10 @@ class MainActivity : AppCompatActivity(), CharactersListFragment.CharacterSelect
         val tabs: TabLayout = findViewById(R.id.tabLayout)
 
         TabLayoutMediator(tabs, viewPager) { tab, position ->
-            tab.text = resources.getStringArray(R.array.tabLayoutStrings)[position]
+            tab.text = resources.getStringArray(R.array.main_tabLayout_strings)[position]
         }.attach()
 
     }
-
 
     override fun onCharacterSelected(character: Character) {
         Log.i("Edg", "Character loaded on MainActivity: ${character.name}")

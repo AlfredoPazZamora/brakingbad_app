@@ -26,6 +26,7 @@
                 android:layout_height="250dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
+                tools:src="@drawable/ic_launcher_foreground"
                 android:src="@drawable/img_example" />
 
             <LinearLayout
@@ -42,8 +43,7 @@
                     android:id="@+id/name_detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Name"
-
+                    tools:text="@string/text_name"
                     android:gravity="center"
                     android:textSize="25sp"
                     android:textColor="@color/white"
@@ -55,7 +55,7 @@
                     android:id="@+id/nickname_detail"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Nickname"
+                    tools:text="@string/text_nickname"
                     android:textColor="@color/white"
                     android:textSize="15sp"
                     android:layout_marginTop="5dp"
@@ -94,20 +94,19 @@
                         android:id="@+id/icon_status_detail"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/icon_unknow"
                         android:layout_centerVertical="true"
-                        />
+                        tools:src="@drawable/ic_launcher_foreground"
+                        android:src="@drawable/icon_unknow" />
 
                     <TextView
                         android:id="@+id/text_status_detail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        tools:text="@string/text_generic"
-                        android:textSize="15sp"
-                        android:layout_toEndOf="@id/icon_status_detail"
                         android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/icon_status_detail"
                         android:paddingHorizontal="20dp"
-                        />
+                        android:textSize="15sp"
+                        tools:text="@string/text_generic" />
 
 
                 </RelativeLayout>
@@ -129,20 +128,19 @@
                         android:id="@+id/icon_date_detail"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/icon_information"
                         android:layout_centerVertical="true"
-                        />
+                        tools:src="@drawable/ic_launcher_foreground"
+                        android:src="@drawable/icon_information" />
 
                     <TextView
                         android:id="@+id/text_date_detail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        tools:text="@string/text_generic"
-                        android:textSize="15sp"
-                        android:layout_toEndOf="@id/icon_date_detail"
                         android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/icon_date_detail"
                         android:paddingHorizontal="20dp"
-                        />
+                        android:textSize="15sp"
+                        tools:text="@string/text_generic" />
 
                 </RelativeLayout>
 
@@ -163,20 +161,19 @@
                         android:id="@+id/icon_occupation_detail"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/icon_information"
                         android:layout_centerVertical="true"
-                        />
+                        tools:src="@drawable/ic_launcher_foreground"
+                        android:src="@drawable/icon_information" />
 
                     <TextView
                         android:id="@+id/text_occupation_detail"
-                        android:layout_width="wrap_content"
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_toEndOf="@id/icon_occupation_detail"
                         android:layout_centerVertical="true"
-                        android:textSize="15sp"
+                        android:layout_toEndOf="@id/icon_occupation_detail"
                         android:paddingHorizontal="20dp"
-                        tools:text="@string/text_generic"
-                        />
+                        android:textSize="15sp"
+                        tools:text="@string/text_generic" />
 
                 </RelativeLayout>
 
@@ -197,20 +194,19 @@
                         android:id="@+id/icon_actor_detail"
                         android:layout_width="25dp"
                         android:layout_height="25dp"
-                        android:src="@drawable/icon_information"
                         android:layout_centerVertical="true"
-                        />
+                        tools:src="@drawable/ic_launcher_foreground"
+                        android:src="@drawable/icon_information" />
 
                     <TextView
                         android:id="@+id/text_actor_detail"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        tools:text="@string/text_generic"
-                        android:textSize="15sp"
-                        android:layout_toEndOf="@id/icon_actor_detail"
                         android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/icon_actor_detail"
                         android:paddingHorizontal="20dp"
-                        />
+                        android:textSize="15sp"
+                        tools:text="@string/text_generic" />
 
                 </RelativeLayout>
 
@@ -226,6 +222,7 @@
                     android:layout_height="50dp"
                     android:layout_marginTop="40dp"
                     android:src="@drawable/img_icon_detail_screen"
+                    tools:src="@drawable/ic_launcher_foreground"
                     />
 
 

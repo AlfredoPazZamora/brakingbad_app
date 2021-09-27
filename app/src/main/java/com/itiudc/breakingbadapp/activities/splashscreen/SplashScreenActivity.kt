@@ -6,7 +6,7 @@ import android.os.Bundle
 import android.os.Handler
 import com.itiudc.breakingbadapp.R
 import com.itiudc.breakingbadapp.activities.loginscreen.LoginScreenActivity
-import com.itiudc.breakingbadapp.activities.mainscreen.MainActivity
+
 
 class SplashScreenActivity : AppCompatActivity() {
 

@@ -1,13 +1,34 @@
 <resources>
     <string name="app_name">BreakingBadApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_generic">Example to show</string>
+    <string name="text_name">Name</string>
+    <string name="text_nickname">Nickname</string>
 
-    <string-array name="tabLayoutStrings">
+    <!--  MAIN ACTIVITY  -->
+    <string-array name="main_tabLayout_strings">
         <item>Characters</item>
         <item>Phrase</item>
         <item>Settings</item>
     </string-array>
+    <!-- END MAIN ACTIVITY  -->
 
-    <string name="text_generic">Example to show</string>
+    <!--  LOGIN ACTIVITY  -->
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_unwritten_both">Please write something</string>
+    <string name="login_unwritten_email">Please write your email</string>
+    <string name="login_unwritten_password">Please write your password</string>
+    <string name="login_error_email">Please write your email</string>
+    <string name="login_error_password">lease enter a password greater than 5 characters</string>
+    <!-- END LOGIN ACTIVITY  -->
+
+    <!--  DETAIL ACTIVITY  -->
+    <string name="detail_text_status">Is %1$s</string>
+    <string name="detail_text_date">Born in %1$s</string>
+    <string name="detail_text_occupation">Occupation: %1$s</string>
+    <string name="detail_text_portrayed">Performed by: %1$s</string>
+    <!--  END DETAIL ACTIVITY  -->
+
 </resources>

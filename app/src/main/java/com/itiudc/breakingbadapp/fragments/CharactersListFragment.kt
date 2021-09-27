@@ -7,15 +7,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Adapter
-import android.widget.TextView
-import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
-import com.itiudc.breakingbadapp.R
 import com.itiudc.breakingbadapp.adapters.CharacterListAdapter
-import com.itiudc.breakingbadapp.databinding.ActivityMainBinding
 import com.itiudc.breakingbadapp.databinding.FragmentCharactersListBinding
 import com.itiudc.breakingbadapp.models.Character
 import com.itiudc.breakingbadapp.viewModels.CharacterViewModel

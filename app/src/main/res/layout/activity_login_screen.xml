@@ -15,28 +15,25 @@
         >
 
 
-
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="vertical"
-            >
+            android:orientation="vertical">
 
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="100dp"
                 android:layout_gravity="center"
+                android:layout_marginVertical="30dp"
                 android:scaleType="fitCenter"
                 android:src="@drawable/img_icon_breaking_bad"
-                android:layout_marginVertical="30dp"
-            />
+                tools:src="@drawable/ic_launcher_foreground" />
 
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:background="@drawable/layout_bg"
-                >
+                android:background="@drawable/layout_bg">
 
                 <LinearLayout
                     android:layout_width="match_parent"
@@ -59,9 +56,9 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center"
                         android:layout_marginTop="30dp"
-                        android:inputType="textPassword"
                         android:background="@drawable/edit_text_bg"
                         android:hint="Password"
+                        android:inputType="textPassword"
                         android:padding="15dp" />
 
                     <Button
@@ -76,15 +73,16 @@
                         android:textSize="16sp"
                         android:textStyle="bold" />
 
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="100dp"
-                    android:layout_gravity="center"
-                    android:scaleType="centerCrop"
-                    android:layout_marginTop="40dp"
-                    android:src="@drawable/img_login_lets_cook"
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="100dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="40dp"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/img_login_lets_cook"
+                        tools:src="@drawable/ic_launcher_foreground"
 
-                    />
+                        />
                 </LinearLayout>
 
 
