@@ -20,7 +20,7 @@
             android:layout_height="match_parent"
             android:adjustViewBounds="true"
             android:scaleType="centerCrop"
-            android:src="@drawable/img_splash"
+            android:src="@drawable/img_splash_bg"
             tools:src="@drawable/ic_launcher_foreground"
             />
     </RelativeLayout>

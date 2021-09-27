@@ -26,8 +26,8 @@
                 android:layout_height="250dp"
                 android:adjustViewBounds="true"
                 android:scaleType="centerCrop"
-                tools:src="@drawable/ic_launcher_foreground"
-                android:src="@drawable/img_example" />
+                android:src="@drawable/img_example"
+                tools:src="@drawable/ic_launcher_foreground" />
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -221,7 +221,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="40dp"
-                    android:src="@drawable/img_icon_detail_screen"
+                    android:src="@drawable/img_icon_black"
                     tools:src="@drawable/ic_launcher_foreground"
                     />
 

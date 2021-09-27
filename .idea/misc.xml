@@ -32,6 +32,13 @@
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/ic_baseline_notifications_active_24.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/ic_baseline_toggle_on_24.xml" value="0.23333333333333334" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/ic_settings.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/ic_settings_downphoto.xml" value="0.240625" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/icon_dark_mode.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/icon_help.xml" value="0.240625" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/icon_language.xml" value="0.240625" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/icon_message.xml" value="0.20555555555555555" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/icon_notifications.xml" value="0.240625" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/layout_bg.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/drawable/screen_login_bg.xml" value="0.23333333333333334" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/activity_detail.xml" value="0.22447916666666667" />
@@ -41,7 +48,7 @@
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/character_list_item.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/fragment_characters_list.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/fragment_phrase.xml" value="0.15806159420289856" />
-        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/fragment_settings.xml" value="0.1213768115942029" />
+        <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/fragment_settings.xml" value="0.22" />
         <entry key="..\:/Users/alfre/AndroidStudioProjects/Proyecto/brakingbad_app/app/src/main/res/layout/phrases_item.xml" value="0.15806159420289856" />
         <entry key="..\:/Users/jesus/Desktop/Semestre5/programacion de aplicaciones/brakingbad_app/app/src/main/res/drawable/imagesettings.xml" value="0.1814814814814815" />
         <entry key="..\:/Users/jesus/Desktop/Semestre5/programacion de aplicaciones/brakingbad_app/app/src/main/res/layout/activity_detail.xml" value="0.16203703703703703" />
