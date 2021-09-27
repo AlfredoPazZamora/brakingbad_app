@@ -8,4 +8,6 @@
         <item>Phrase</item>
         <item>Settings</item>
     </string-array>
+
+    <string name="text_generic">Example to show</string>
 </resources>

@@ -36,8 +36,8 @@ class DetailActivity : AppCompatActivity() {
                 .placeholder(R.drawable.ic_launcher_foreground)
                 .into(binding.imgProfile)
 
-            binding.textStatusDetail.text = character?.status.toString()
-            binding.textDateDetail.text = character?.birthday.toString()
+            binding.textStatusDetail.text = "Is ${character?.status.toString()}"
+            binding.textDateDetail.text = "Born in ${character?.birthday.toString()}"
 
             when(character?.status){
                 "Deceased" -> Glide
@@ -63,9 +63,9 @@ class DetailActivity : AppCompatActivity() {
 
             val occupationText = character?.occupation?.joinToString(", ").toString()
 
-            binding.textOccupationDetail.text = occupationText
+            binding.textOccupationDetail.text = "Occupation: $occupationText"
 
-            binding.textActorDetail.text = character?.portrayed.toString()
+            binding.textActorDetail.text = "Performed by: ${character?.portrayed.toString()}"
 
 
         }

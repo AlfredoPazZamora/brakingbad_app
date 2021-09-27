@@ -29,25 +29,13 @@
             app:layout_constraintTop_toTopOf="parent">
 
             <!-- WORK IN THIS AREA -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recycler_phrases_item"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                />
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                android:gravity="center">
-
-
-
-                <androidx.recyclerview.widget.RecyclerView
-                    android:id="@+id/recycler_phrases_item"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent">
-
-                </androidx.recyclerview.widget.RecyclerView>
-
-
-
-            </LinearLayout>
         </androidx.cardview.widget.CardView>
 
     </androidx.constraintlayout.widget.ConstraintLayout>

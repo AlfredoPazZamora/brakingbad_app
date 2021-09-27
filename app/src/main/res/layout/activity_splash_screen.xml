@@ -15,11 +15,13 @@
         >
 
         <ImageView
-            android:layout_width="200dp"
-            android:layout_height="200dp"
-            android:src="@drawable/icon_splash_screen"
+            android:id="@+id/image_back"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:scaleType="centerCrop"
+            android:src="@drawable/img_splash"
             tools:src="@drawable/ic_launcher_foreground"
-            android:layout_centerInParent="true"
             />
     </RelativeLayout>
 </layout>
