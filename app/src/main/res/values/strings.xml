@@ -20,8 +20,8 @@
     <string name="login_unwritten_both">Please write something</string>
     <string name="login_unwritten_email">Please write your email</string>
     <string name="login_unwritten_password">Please write your password</string>
-    <string name="login_error_email">Please write your email</string>
-    <string name="login_error_password">lease enter a password greater than 5 characters</string>
+    <string name="login_error_email">Please write a correct email</string>
+    <string name="login_error_password">Please enter a password greater than 5 characters</string>
     <!-- END LOGIN ACTIVITY  -->
 
     <!--  DETAIL ACTIVITY  -->

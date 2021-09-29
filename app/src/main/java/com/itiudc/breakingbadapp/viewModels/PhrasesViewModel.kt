@@ -23,8 +23,14 @@ class PhrasesViewModel : ViewModel() {
 
     private suspend fun fetch(): MutableList<Phrases>{
         return withContext(Dispatchers.IO){
-            val phrases: MutableList<Phrases> = phrasesService.getPhrases()
+            val phrases: MutableList<Phrases> = phrasesService.getRandomPhrase()
             phrases
+        }
+    }
+
+    fun getPhrase(){
+        viewModelScope.launch {
+            _phrases.value = fetch()
         }
     }
 }
