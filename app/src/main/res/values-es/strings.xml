@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello_blank_fragment">Hola fragmento en blanco</string>
+    <string name="text_generic">Ejemplo para mostrar</string>
+    <string name="text_name">Nombre</string>
+    <string name="text_nickname">Apodo</string>
+
+    <!--  MAIN ACTIVITY  -->
+    <string-array name="main_tabLayout_strings">
+        <item>Personajes</item>
+        <item>Frase</item>
+        <item>Ajustes</item>
+    </string-array>
+    <!-- END MAIN ACTIVITY  -->
+
+    <!--  LOGIN ACTIVITY  -->
+    <string name="login_hint_email">Correo</string>
+    <string name="login_hint_password">Contraseña</string>
+    <string name="login_button">Iniciar sesión</string>
+    <string name="login_unwritten_both">Por favor escribe algo</string>
+    <string name="login_unwritten_email">Por favor escribe tu correo</string>
+    <string name="login_unwritten_password">Por favor escribe tu contraseña</string>
+    <string name="login_error_email">Por favor escribe un correo correcto</string>
+    <string name="login_error_password">Por favor escribe una contraseña mayor a 5 caracteres</string>
+    <!-- END LOGIN ACTIVITY  -->
+
+    <!--  DETAIL ACTIVITY  -->
+    <string name="detail_text_status">Estado: %1$s</string>
+    <string name="detail_text_date">Nacío el %1$s</string>
+    <string name="detail_text_occupation">Ocupacíon: %1$s</string>
+    <string name="detail_text_portrayed">Interpretado por: %1$s</string>
+    <!--  END DETAIL ACTIVITY  -->
+
+    <!--  SETTINGS FRAGMENT  -->
+    <string name="settings_text_notifications">Notificaciones</string>
+    <string name="settings_text_messages">Mensajes</string>
+    <string name="settings_text_help">Ayuda</string>
+    <string name="settings_text_dark_mode">Modo oscuro</string>
+    <string name="settings_text_language">Lenguaje</string>
+    <!--  END SETTINGS FRAGMENT  -->
+</resources>

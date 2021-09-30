@@ -5,9 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.Switch
-import android.widget.TextView
-import com.itiudc.breakingbadapp.R
+import com.itiudc.breakingbadapp.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
 
@@ -16,13 +14,9 @@ class SettingsFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val view = inflater.inflate(R.layout.fragment_settings, container, false)
+        val binding = FragmentSettingsBinding.inflate(inflater, container, false)
 
-
-
-
-
-        return view
+        return binding.root
     }
 
 }
