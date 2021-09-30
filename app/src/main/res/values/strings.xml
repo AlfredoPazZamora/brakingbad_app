@@ -1,11 +1,45 @@
 <resources>
-    <string name="app_name">BreakingBadApp</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="app_name" translatable="false">Breaking Bad</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="text_generic">Example to show</string>
+    <string name="text_name">Name</string>
+    <string name="text_nickname">Nickname</string>
 
-    <string-array name="tabLayoutStrings">
+    <!--  MAIN ACTIVITY  -->
+    <string-array name="main_tabLayout_strings">
         <item>Characters</item>
         <item>Phrase</item>
         <item>Settings</item>
     </string-array>
+    <!-- END MAIN ACTIVITY  -->
+
+    <!--  LOGIN ACTIVITY  -->
+    <string name="login_hint_email">Email</string>
+    <string name="login_hint_password">Password</string>
+    <string name="login_button">Login</string>
+    <string name="login_unwritten_both">Please write something</string>
+    <string name="login_unwritten_email">Please write your email</string>
+    <string name="login_unwritten_password">Please write your password</string>
+    <string name="login_error_email">Please write a correct email</string>
+    <string name="login_error_password">Please enter a password greater than 5 characters</string>
+    <!-- END LOGIN ACTIVITY  -->
+
+    <!--  DETAIL ACTIVITY  -->
+    <string name="detail_text_status">Is %1$s</string>
+    <string name="detail_text_date">Born in %1$s</string>
+    <string name="detail_text_occupation">Occupation: %1$s</string>
+    <string name="detail_text_portrayed">Performed by: %1$s</string>
+    <!--  END DETAIL ACTIVITY  -->
+
+    <!--  SETTINGS FRAGMENT  -->
+    <string name="settings_text_notifications">Notifications</string>
+    <string name="settings_text_messages">Messages</string>
+    <string name="settings_text_help">Help</string>
+    <string name="settings_text_dark_mode">Dark Mode</string>
+    <string name="settings_text_language">Language</string>
+    <string name="settings_switch_text_on" translatable="false">On</string>
+    <string name="settings_switch_text_off" translatable="false">Off</string>
+    <string name="settings_switch_text_es" translatable="false">ES</string>
+    <string name="settings_switch_text_en" translatable="false">EN</string>
+    <!--  END SETTINGS FRAGMENT  -->
 </resources>

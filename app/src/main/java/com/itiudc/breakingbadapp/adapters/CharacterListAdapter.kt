@@ -15,8 +15,8 @@ class CharacterListAdapter(private val characterList: List<Character>) : Recycle
 
     inner class ViewHolder(private val binding: CharacterListItemBinding) : RecyclerView.ViewHolder(binding.root) {
         fun bind(character: Character){
-            binding.nameCharacter.text = character.name.toString()
-            binding.nicknameCharacter.text = character.nickname.toString()
+            binding.nameCharacter.text = character.name
+            binding.nicknameCharacter.text = character.nickname
             Glide
                 .with(binding.root)
                 .load(character.img)

@@ -5,28 +5,37 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.TextView
-import com.itiudc.breakingbadapp.R
+import androidx.lifecycle.*
+import com.itiudc.breakingbadapp.databinding.FragmentPhraseBinding
+import com.itiudc.breakingbadapp.models.Phrases
+import com.itiudc.breakingbadapp.viewModels.PhrasesViewModel
 
 
 class PhraseFragment : Fragment() {
 
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-
-    }
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
-        val view = inflater.inflate(R.layout.fragment_phrase, container, false)
+    ): View {
+        val binding = FragmentPhraseBinding.inflate(inflater, container, false)
+        val phrasesViewModel = ViewModelProvider(this).get(PhrasesViewModel::class.java)
 
-        val title: TextView = view.findViewById(R.id.subtitleTextView)
-        title.text = resources.getStringArray(R.array.tabLayoutStrings)[1]
+        phrasesViewModel.phrases.observe(viewLifecycleOwner,Observer<MutableList<Phrases>> {
+            phrase ->
+                binding.authorText.text = phrase[0].author
+                binding.phraseText.text = phrase[0].quote
+        })
 
-        return view
+        binding.root.setOnClickListener{
+            phrasesViewModel.getPhrase()
+        }
+
+        return binding.root
     }
 
-
+    override fun onPause() {
+        super.onPause()
+        val phrasesViewModel = ViewModelProvider(this).get(PhrasesViewModel::class.java)
+        phrasesViewModel.getPhrase()
+    }
 }

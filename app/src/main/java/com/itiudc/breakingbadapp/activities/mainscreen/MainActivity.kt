@@ -6,7 +6,6 @@ import android.os.Bundle
 import android.util.Log
 import androidx.databinding.DataBindingUtil
 import androidx.viewpager2.widget.ViewPager2
-import com.bumptech.glide.Glide
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
 import com.itiudc.breakingbadapp.R
@@ -20,6 +19,8 @@ class MainActivity : AppCompatActivity(), CharactersListFragment.CharacterSelect
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+
         val binding = DataBindingUtil.setContentView<ActivityMainBinding>(this, R.layout.activity_main)
 
         val tabLayoutAdapter = TabLayoutAdapter(this)
@@ -29,7 +30,7 @@ class MainActivity : AppCompatActivity(), CharactersListFragment.CharacterSelect
         val tabs: TabLayout = findViewById(R.id.tabLayout)
 
         TabLayoutMediator(tabs, viewPager) { tab, position ->
-            tab.text = resources.getStringArray(R.array.tabLayoutStrings)[position]
+            tab.text = resources.getStringArray(R.array.main_tabLayout_strings)[position]
         }.attach()
 
     }
