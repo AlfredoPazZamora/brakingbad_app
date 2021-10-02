@@ -31,17 +31,21 @@ class LoginScreenActivity : AppCompatActivity() {
         buttonLogin.setOnClickListener(){
             //Validations
             when{
-                inputEmail.text.isEmpty() && inputPassword.text.isEmpty() -> Toast.makeText(this, unwrittenBoth, Toast.LENGTH_SHORT).show()
-                inputEmail.text.isEmpty() -> Toast.makeText(this, unwrittenEmail, Toast.LENGTH_SHORT).show()
-                inputPassword.text.isEmpty() -> Toast.makeText(this, unwrittenPassword, Toast.LENGTH_SHORT).show()
-                !android.util.Patterns.EMAIL_ADDRESS.matcher(inputEmail.text).matches() -> Toast.makeText(this, errorEmail, Toast.LENGTH_SHORT).show()
-                inputPassword.text.length < 5 -> Toast.makeText(this, errorPassword, Toast.LENGTH_SHORT).show()
+                inputEmail.text.isEmpty() && inputPassword.text.isEmpty() ->
+                    Toast.makeText(this, unwrittenBoth, Toast.LENGTH_SHORT).show()
+                inputEmail.text.isEmpty() ->
+                    Toast.makeText(this, unwrittenEmail, Toast.LENGTH_SHORT).show()
+                inputPassword.text.isEmpty() ->
+                    Toast.makeText(this, unwrittenPassword, Toast.LENGTH_SHORT).show()
+                !android.util.Patterns.EMAIL_ADDRESS.matcher(inputEmail.text).matches() ->
+                    Toast.makeText(this, errorEmail, Toast.LENGTH_SHORT).show()
+                inputPassword.text.length < 5 ->
+                    Toast.makeText(this, errorPassword, Toast.LENGTH_SHORT).show()
                 else ->{
                     val intent = Intent(this, MainActivity::class.java)
                     startActivity(intent)
                 }
             }
         }
-
     }
 }

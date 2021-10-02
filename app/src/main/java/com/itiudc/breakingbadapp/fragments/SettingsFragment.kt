@@ -8,15 +8,11 @@ import android.view.ViewGroup
 import com.itiudc.breakingbadapp.databinding.FragmentSettingsBinding
 
 class SettingsFragment : Fragment() {
-
-
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
         val binding = FragmentSettingsBinding.inflate(inflater, container, false)
-
         return binding.root
     }
-
 }
