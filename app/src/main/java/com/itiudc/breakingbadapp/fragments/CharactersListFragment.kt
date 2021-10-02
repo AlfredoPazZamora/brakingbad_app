@@ -49,14 +49,10 @@ class CharactersListFragment : Fragment() {
                 Log.i("edg", "Character ${it.name}")
                 characterSelectListener.onCharacterSelected(it)
             }
-
             binding.recyclerCharacterList.layoutManager = LinearLayoutManager(requireActivity())
             binding.recyclerCharacterList.adapter = adapter
 
         })
-
         return binding.root
     }
-
-
 }
