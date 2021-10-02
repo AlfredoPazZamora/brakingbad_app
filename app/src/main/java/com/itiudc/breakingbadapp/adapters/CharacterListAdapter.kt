@@ -52,8 +52,6 @@ class CharacterListAdapter(private val characterList: List<Character>) : Recycle
                 else
                     Log.i("edg", "onMovieClick is not initialized")
             }
-
-
         }
     }
 

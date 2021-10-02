@@ -15,10 +15,9 @@ class TabLayoutAdapter(fm: FragmentActivity): FragmentStateAdapter(fm) {
     override fun createFragment(position: Int): Fragment {
         return when (position) {
             0 -> CharactersListFragment()
-            1 -> PhraseFragment()
             2 -> SettingsFragment()
+            1 -> PhraseFragment()
             else -> throw IllegalStateException("Unexpected position $position")
         }
     }
-
 }

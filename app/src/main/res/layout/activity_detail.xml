@@ -106,6 +106,7 @@
                         android:layout_toEndOf="@id/icon_status_detail"
                         android:paddingHorizontal="20dp"
                         android:textSize="15sp"
+                        android:textColor="@color/black_212"
                         tools:text="@string/text_generic" />
 
 
@@ -140,6 +141,7 @@
                         android:layout_toEndOf="@id/icon_date_detail"
                         android:paddingHorizontal="20dp"
                         android:textSize="15sp"
+                        android:textColor="@color/black_212"
                         tools:text="@string/text_generic" />
 
                 </RelativeLayout>
@@ -173,6 +175,7 @@
                         android:layout_toEndOf="@id/icon_occupation_detail"
                         android:paddingHorizontal="20dp"
                         android:textSize="15sp"
+                        android:textColor="@color/black_212"
                         tools:text="@string/text_generic" />
 
                 </RelativeLayout>
@@ -205,6 +208,7 @@
                         android:layout_centerVertical="true"
                         android:layout_toEndOf="@id/icon_actor_detail"
                         android:paddingHorizontal="20dp"
+                        android:textColor="@color/black_212"
                         android:textSize="15sp"
                         tools:text="@string/text_generic" />
 

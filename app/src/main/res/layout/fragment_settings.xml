@@ -63,15 +63,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_toEndOf="@id/icon_settings_notifications"
                         android:drawablePadding="5dp"
                         android:singleLine="true"
                         android:text="@string/settings_text_notifications"
-                        android:textColor="#262626"
-                        android:textSize="20sp"
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toEndOf="@id/icon_settings_notifications"
-                        />
+                        android:textColor="@color/black_212"
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -92,15 +91,14 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginHorizontal="10dp"
+                        android:layout_toEndOf="@id/icon_settings_help"
                         android:drawablePadding="5dp"
                         android:singleLine="true"
                         android:text="@string/settings_text_help"
-                        android:textColor="#262626"
-                        android:textSize="20sp"
-                        android:layout_marginHorizontal="10dp"
-                        android:layout_centerVertical="true"
-                        android:layout_toEndOf="@id/icon_settings_help"
-                        />
+                        android:textColor="@color/black_212"
+                        android:textSize="20sp" />
 
                 </RelativeLayout>
 
@@ -128,7 +126,7 @@
                         android:drawablePadding="5dp"
                         android:singleLine="true"
                         android:text="@string/settings_text_dark_mode"
-                        android:textColor="#262626"
+                        android:textColor="@color/black_212"
                         android:textSize="20sp" />
 
                     <LinearLayout
@@ -193,7 +191,7 @@
                         android:drawablePadding="5dp"
                         android:singleLine="true"
                         android:text="@string/settings_text_language"
-                        android:textColor="#262626"
+                        android:textColor="@color/black_212"
                         android:textSize="20sp" />
 
                     <LinearLayout
